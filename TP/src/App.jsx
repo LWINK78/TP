@@ -8,6 +8,7 @@ import AuthModal from './components/AuthModal'
 import LoginButton from './components/LoginButton'
 import { AuthProvider } from './context/AuthContext'
 import Documentation from './components/Documentation'
+import TestPage from './components/TestPage'
 
 // Ajouté par auteur — commentaire de fonction (remplacez si besoin)
 function App() {
@@ -20,6 +21,7 @@ function App() {
   })
   const [showLocation, setShowLocation] = useState(false)
   const [showDocs, setShowDocs] = useState(false)
+  const [showTest, setShowTest] = useState(false)
 
   return (
     <AuthProvider>
@@ -35,6 +37,9 @@ function App() {
           <div style={{ margin: '0.5rem 0' }}>
             <button onClick={() => setShowDocs((s) => !s)}>
               {showDocs ? 'Masquer documentation' : 'Afficher documentation'}
+            </button>
+            <button style={{ marginLeft: '0.5rem' }} onClick={() => setShowTest((s) => !s)}>
+              {showTest ? 'Masquer page de test' : 'Afficher page de test'}
             </button>
           </div>
         <Child value={word} onChange={setWord} />
@@ -54,6 +59,7 @@ function App() {
         <UVInfo date={selectedDate} longitude={location.longitude} latitude={location.latitude} />
       </div>
       {showDocs && <Documentation />}
+      {showTest && <TestPage />}
       </div>
       </>
     </AuthProvider>
