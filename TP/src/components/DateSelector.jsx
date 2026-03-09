@@ -1,17 +1,16 @@
 import React from 'react'
-import './Child.css'
+import './DateSelector.css'
 
 // Ajouté par auteur — commentaire de fonction (remplacez si besoin)
-export default function Child({ value, onChange }) {
+export default function DateSelector({ date, onChange }) {
   return (
-    <div className="child">
+    <div className="date-selector">
       <label>
-        Mot enfant :
+        Sélectionnez la date :
         <input
-          type="text"
-          value={value}
+          type="date"
+          value={date}
           onChange={(e) => onChange(e.target.value)}
-          placeholder="Écris un mot ici"
         />
       </label>
     </div>

@@ -1,0 +1,9 @@
+.child {
+  margin: 0.5rem 0;
+}
+.child input {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}

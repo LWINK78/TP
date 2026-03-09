@@ -1,0 +1,9 @@
+.date-selector {
+  margin: 0.5rem 0;
+}
+.date-selector input {
+  margin-left: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}

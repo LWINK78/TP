@@ -1,0 +1,16 @@
+.uv-info {
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fafafa;
+}
+.uv-info strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.uv-info small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #bd1515;
+}
